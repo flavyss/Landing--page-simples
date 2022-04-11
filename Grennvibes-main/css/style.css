@@ -1,0 +1,332 @@
+/*Reset basico da pagina*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    /*font-family: 'Oswald', sans-serif;*/
+    background-color: rgb(12, 12, 12);
+}
+
+/*Ocultação do menu mobile*/
+
+header nav.menu-mobile{
+    display: none;
+}
+
+/*Variaveis globais de estilo*/
+
+.container{
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.clear{
+    clear: both;
+}
+
+.opacity{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.659);
+}
+
+/*Cabeçalho do site*/
+
+header{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-image: url('../images/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    position: relative;
+}
+
+header > .container{
+    position: relative;
+    z-index: 2;
+    padding-top: 20px;
+}
+
+header .logo{
+    float: left;
+}
+
+header .logo h1{
+    padding:6px 8px;
+    font-size: 40px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    float: left;
+}
+
+header .logo h1:hover{
+    transition: 1s;
+    color: rgb(6, 202, 137);
+    border: 1px solid rgb(6, 202, 137);
+}
+
+header .logo span{
+    line-height: 60px;
+    margin-left: 15px;
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+}
+
+header nav.menu-desktop{
+    float: right;
+}
+
+header nav.menu-desktop ul{
+    list-style: none;
+    line-height: 55px;
+}
+
+header nav.menu-desktop ul li{
+    float: left;
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+header nav.menu-desktop ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+header nav.menu-desktop ul li a:hover{
+    color: rgb(6, 202, 137);
+}
+
+section.init{
+    width: 100%;
+    text-align: center;
+    margin-top: 150px;
+}
+
+section.init .text h1{ 
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+section.init .text p{
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/*Sessões do site*/
+
+section.description{
+    width: 100%;
+    padding: 60px 0;
+    text-align: center;
+    color: white;
+}
+
+section.description h2{
+    font-size: 35px;
+}
+
+section.description p{
+    font-size: 16px;
+    padding: 50px 0;
+}
+
+section.description .img-container{
+    width: 100%;
+}
+
+section.description .img-container .img-content{
+    width: calc(100% / 4);
+    float: left;
+}
+
+section.description .img-container .img-content img{
+    width: 100%;
+    filter: grayscale(100%);
+}
+
+section.description .img-container .img-content img:hover{
+    filter: grayscale(0);
+    transition: 1s;
+}
+
+section.description button{
+    width:200px;
+    padding: 8px 0;
+    cursor: pointer;
+    outline: none;
+    margin-top: 50px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 18px;
+}
+
+section.description button:hover{
+    color: aqua;
+    transition: 1s;
+    border: 1px solid aqua;
+}
+
+/*Sessão de detalhes responsivos*/
+
+section.rp-backg{
+    width: 100%;
+    height:80vh;  
+    background-image: url('https://tratamentodeagua.com.br/wp-content/uploads/2021/09/amazonia.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+section.rp-backg .opacity{
+    background-color: rgba(0, 0, 0, 0.829);
+}
+
+section.rp-backg .title{
+    padding: 80px 0;
+    margin: 15px auto;
+    width: 30%;
+    text-align: center;
+}
+
+section.rp-backg h1{
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+}
+
+section.rp-backg .border-2{
+    width: 50%;
+    margin: 10px auto;
+    height: 1px;
+    background-color: aqua;
+}
+
+
+section.rp-backg .container{
+    z-index: 2;
+    position: relative;
+}
+
+section.rp-backg .description-container{
+    width: 100%;
+}
+
+section.rp-backg .description-container .description-content{
+    width: calc(100% / 3);
+    float: left;
+    text-align: justify;
+    margin-top: 10px;
+    padding: 0 40px;
+}
+section.rp-backg .description-container .description-content h2{
+    font-size: 23px;
+    text-transform: uppercase;
+}
+
+section.rp-backg .description-container .description-content .border{
+    width: 50px;
+    margin: 10px 0;
+    height: 1px;
+    background-color: aqua;
+}
+
+section.rp-backg .description-container .description-content p{
+    font-size: 16px;
+}
+
+section.rp-backg .description-container .description-content .star{
+    text-align: justify;
+    margin-top: 15px;
+    color: aquamarine;
+}
+
+/*Footer*/
+
+footer{
+    text-align: center;
+    margin-top: 55px;
+    color: white;
+}
+
+footer h2{
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+footer p{
+    padding: 20px 0 55px 0;
+    border-bottom:1px solid #666 ;
+}
+
+footer .inf-container{
+    width: 100%;
+}
+
+footer .inf-container .inf-wraper{
+    width: calc(100% / 3);
+    float: left;
+    padding:40px;
+    margin-bottom: 55px
+}
+
+footer .inf-container .inf-wraper h3{
+    color: rgb(153, 153, 153);
+    margin-bottom: 25px;
+    font-size: 17px;
+}
+
+footer .inf-container .inf-wraper p{
+    padding: 8px;
+    text-align: justify;
+    color: rgb(233, 233, 233);
+}
+
+footer .end{
+    width: 100%;
+    border-top: 1px solid #666;
+    padding: 25px;
+    margin-bottom: 15px
+}
+
+footer .end p{
+    border: none;
+    padding:0;
+    text-align: justify;
+}
+
+footer .end .p1{
+    float: left;
+}
+
+footer .end .p2{
+    float: right;
+}
+footer .end .p2 span{
+    padding: 0 5px;
+    font-size: 18px;
+}

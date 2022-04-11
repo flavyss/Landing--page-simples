@@ -1,4 +1,4 @@
-# Landing-page-simples
+# 💻 Landing-page-simples 💻
 
 Este é um projeto de uma landing page simples onde utilizei apenas conceitos básicos do html e css basicos, porém, resolvi aplicar um framework JS (jquery).
 
